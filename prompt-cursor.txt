@@ -1,0 +1,23 @@
+Eres un experto desarrollador frontend. Genera una landing page profesional en React (JavaScript) con las siguientes secciones obligatorias:
+
+1. **Header** con menú de navegación (Inicio, Servicios, Contacto) y logo.
+2. **Hero Section**: título impactante ("Transformamos Ideas en Soluciones Digitales"), subtítulo atractivo y botón CTA ("Comenzar").
+3. **Sobre Nosotros**: texto corporativo breve que transmita confianza y experiencia.
+4. **Servicios**: 3 tarjetas con ícono (FontAwesome o emoji), título y descripción: 
+   - Desarrollo Web
+   - Marketing Digital
+   - Soporte 24/7
+5. **Testimonios**: 2 reseñas de clientes con nombre, cargo y foto/avatar.
+6. **Formulario de Contacto**: campos (nombre, email, mensaje). Solo maquetado visual, sin backend.
+7. **Footer**: enlaces a redes sociales (Facebook, Twitter, LinkedIn, Instagram).
+
+Requisitos técnicos:
+- React con JavaScript (no TypeScript)
+- Estilos con CSS puro o Tailwind (elige el que mejor sepas)
+- Diseño **responsive** (mobile-first)
+- Colores profesionales: azul marino (#1e293b), blanco, acentos en celeste (#3b82f6)
+- Bordes redondeados, sombras suaves, tipografía moderna (Poppins o Inter)
+- Los íconos pueden ser de react-icons o emojis
+- El formulario NO debe enviar datos realmente
+
+Genera el código completo (App.jsx y componentes) en un solo mensaje.
