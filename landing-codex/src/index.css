@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-up {
+  transform: translateY(42px);
+}
+
+.scroll-reveal-down {
+  transform: translateY(-42px);
+}
+
+.scroll-reveal-left {
+  transform: translateX(-42px);
+}
+
+.scroll-reveal-right {
+  transform: translateX(42px);
+}
+
+.scroll-reveal-scale {
+  transform: scale(0.96);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.footer-reveal {
+  animation: footerFadeIn 700ms ease both;
+}
+
+.testimonial-carousel {
+  scrollbar-width: none;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes footerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .footer-reveal {
+    animation: none;
+  }
+}
