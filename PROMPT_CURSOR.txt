@@ -1,0 +1,4 @@
+=== PROMPT CURSOR ===
+
+1. Eres un experto desarrollador frontend. Genera una landing page profesional en React (JavaScript) con las siguientes secciones obligatorias: Header con menú de navegación (Inicio, Servicios, Contacto), Hero Section: título impactante, subtítulo y botón CTA, Sobre Nosotros: texto corporativo breve, Servicios: 3 tarjetas con ícono, título y descripción, Testimonios: 2 reseñas de clientes, Formulario de Contacto (solo maquetado visual), Footer con enlaces a redes sociales. Requisitos técnicos: React con JavaScript, estilos con Tailwind CSS, diseño responsive mobile-first, el formulario NO debe enviar datos realmente. Genera el código completo (App.jsx y todos los componentes) listo para 
+copiar y pegar.

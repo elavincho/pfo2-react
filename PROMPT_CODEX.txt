@@ -1,0 +1,25 @@
+=== PROMPT CODEX ===
+
+1. Eres un experto desarrollador frontend. Genera una landing page profesional en React (JavaScript) con las siguientes secciones obligatorias: Header con menú de navegación (Inicio, Servicios, Contacto), Hero Section: título impactante, subtítulo y botón CTA, Sobre Nosotros: texto corporativo breve, Servicios: 3 tarjetas con ícono, título y descripción, Testimonios: 2 reseñas de clientes, Formulario de Contacto (solo maquetado visual), Footer con enlaces a redes sociales. Requisitos técnicos: React con JavaScript, estilos con Tailwind CSS, diseño responsive mobile-first, el formulario NO debe enviar datos realmente. Genera el código completo (App.jsx y todos los componentes) listo para copiar y pegar.
+
+2. Puedes generar los archivos para descargarlos o guardarlos en una carpeta?
+
+3.Abrí el proyecto en VS Code y ejecuté npm install y npm run dev. Cuando abro el link en navegador se ve en blanco y en la consola muestra este error: Uncaught ReferenceError: React is not defined.
+
+4. Perfecto, ya funciona, no es necesario que crees el zip, puedo utilizar el código directamente. Podrías agregar animaciones a toda la página al hacer scroll tanto al bajar como al subir la página.
+
+5. El footer no se está mostrando, hay forma de arreglar eso?
+
+6. Podrías darle el color original a los íconos de LinkedIn, Instagram y Facebook.
+
+7. Podrías agregar 3 tarjetas con precios "Básico", "Medio", "Pro", que se puedan seleccionar, que tengan un efecto hover, que sea muy visible pero manteniendo el estilo de la página.
+
+8. Podrías agregar 4 testimonios más, pero que estén en la misma fila dentro de un carrusel.
+
+9. Podrías agregar un modo oscuro.
+
+10. Podrías agregar al navbar las secciones que faltan: Sobre Nosotros, Precios, Testimonios.
+
+12. Me puedes crear un archivo HTML separado del proyecto, puede ser en la misma carpeta, con una lista de todos los prompts que te pasé, llamado prompt-codex.
+
+13. Solo necesito los prompts, no necesito el código, eso ya lo tengo en React.
