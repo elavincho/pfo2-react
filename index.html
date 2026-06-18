@@ -10,276 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
-            color: #1a202c;
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Contenedor principal que simula una landing page */
-        .landing-container {
-            max-width: 1280px;
-            width: 90%;
-            margin: 2rem auto;
-            background: #ffffff;
-            border-radius: 2rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-        }
-
-        /* ===== HEADER / NAVIGATION ===== */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 3rem;
-            border-bottom: 1px solid #e2e8f0;
-            background: white;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #2563eb, #1e3a8a);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #4a5568;
-            font-weight: 500;
-            transition: color 0.2s;
-            font-size: 0.95rem;
-        }
-
-        .nav-links a:hover {
-            color: #2563eb;
-        }
-
-        .btn-outline {
-            border: 1px solid #cbd5e0;
-            padding: 0.5rem 1.25rem;
-            border-radius: 2rem;
-            background: white;
-            font-weight: 600;
-        }
-
-        .btn-outline:hover {
-            background: #f8fafc;
-            border-color: #2563eb;
-        }
-
-        /* ===== HERO SECTION ===== */
-        .hero {
-            padding: 4rem 3rem;
-            text-align: center;
-            background: white;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: #e0e7ff;
-            color: #1e40af;
-            font-size: 0.8rem;
-            font-weight: 600;
-            padding: 0.3rem 1rem;
-            border-radius: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            line-height: 1.2;
-            max-width: 800px;
-            margin: 0 auto 1rem;
-            background: linear-gradient(135deg, #0f172a, #2563eb);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -1px;
-        }
-
-        .hero-description {
-            font-size: 1.2rem;
-            color: #475569;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 2rem;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background 0.2s, transform 0.1s;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #1e293b;
-            border: 1px solid #cbd5e1;
-            padding: 0.8rem 2rem;
-            border-radius: 2rem;
-            font-weight: 600;
-            margin-left: 1rem;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.2s;
-        }
-
-        .btn-secondary:hover {
-            border-color: #2563eb;
-            background: #f8fafc;
-        }
-
-        /* ===== SECCIÓN DE CARDS (ACCESOS) ===== */
-        .cards-section {
-            padding: 2rem 3rem 4rem;
-            background: #f8fafc;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: #0f172a;
-        }
-
-        .cards-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .card {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 1.8rem;
-            width: 280px;
-            text-align: center;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-            transition: all 0.2s ease;
-            border: 1px solid #e2e8f0;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.15);
-            border-color: #cbd5e1;
-        }
-
-        .card-icon {
-            font-size: 2.5rem;
-            background: #e0e7ff;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 2rem;
-            margin: 0 auto 1.2rem;
-            color: #2563eb;
-        }
-
-        .card h3 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .card p {
-            color: #475569;
-            font-size: 0.9rem;
-        }
-
-        .badge-model {
-            display: inline-block;
-            background: #e2e8f0;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.8rem;
-            border-radius: 2rem;
-            margin-top: 1rem;
-            font-weight: 500;
-            color: #1e293b;
-        }
-
-        /* ===== FOOTER ===== */
-        .footer {
-            background: white;
-            padding: 1.8rem 3rem;
-            text-align: center;
-            border-top: 1px solid #e2e8f0;
-            color: #64748b;
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 1.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero {
-                padding: 3rem 1.5rem;
-            }
-
-            .cards-section {
-                padding: 2rem 1.5rem;
-            }
-
-            .btn-secondary {
-                margin-left: 0;
-                margin-top: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -320,7 +51,7 @@
                 <a href="https://landing-cursor.vercel.app/" target="_blank" class="card">
                     <div class="card-icon"><i class="fas fa-code"></i></div>
                     <h3>Agente 1: Cursor</h3>
-                    <p>Landing page generada por Cursor con IA integrada.</p>
+                    <p>Landing page generada por Cursor.</p>
                     <div class="badge-model">🤖 Cursor · Composer 2.5 Fast</div>
                 </a>
 
@@ -329,15 +60,15 @@
                     <div class="card-icon"><i class="fas fa-globe"></i></div>
                     <h3>Agente 2: Codex</h3>
                     <p>Landing page generada por Codex.</p>
-                    <div class="badge-model">🌐 Codex - GPT-5.5</div>
+                    <div class="badge-model">🌐 Codex - GPT - 5.5</div>
                 </a>
             </div>
         </div>
 
         <!-- Footer simple -->
         <div class="footer">
-            <p>Práctica Formativa Obligatoria 2 · Front End · 2026</p>
-            <p style="margin-top: 0.5rem;">Comparativa de efectividad de prompts entre agentes autónomos</p>
+            <p style="margin-top: 0.5rem;">IFTS N° 29 · Front End · 2026</p>
+            <p style="margin-top: 0.5rem;">Mario David González Benítez · Comisión D</p>
         </div>
     </div>
 </body>

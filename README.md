@@ -3,7 +3,6 @@
 ## Datos del Estudiante
 - **Nombre:** Mario David González
 - **Comisión:** Lunes
-- **Fecha de entrega:** 26/6/2026
 
 ## Link al Deploy
 [Ver proyecto en Vercel](https://tu-link.vercel.app)
